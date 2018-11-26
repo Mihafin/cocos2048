@@ -29,8 +29,8 @@
 		46880B8219C43A67006E1F66 /* HelloWorld.png in Resources */ = {isa = PBXBuildFile; fileRef = 46880B7A19C43A67006E1F66 /* HelloWorld.png */; };
 		46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46880B8419C43A87006E1F66 /* AppDelegate.cpp */; };
 		46880B8919C43A87006E1F66 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46880B8419C43A87006E1F66 /* AppDelegate.cpp */; };
-		46880B8A19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46880B8619C43A87006E1F66 /* HelloWorldScene.cpp */; };
-		46880B8B19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46880B8619C43A87006E1F66 /* HelloWorldScene.cpp */; };
+		46880B8A19C43A87006E1F66 /* GameScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46880B8619C43A87006E1F66 /* GameScene.cpp */; };
+		46880B8B19C43A87006E1F66 /* GameScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46880B8619C43A87006E1F66 /* GameScene.cpp */; };
 		503AE0F817EB97AB00D1A890 /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 503AE0F617EB97AB00D1A890 /* Icon.icns */; };
 		503AE10517EB98FF00D1A890 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 503AE10317EB98FF00D1A890 /* main.cpp */; };
 		503AE11B17EB9C5A00D1A890 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 503AE11A17EB9C5A00D1A890 /* IOKit.framework */; };
@@ -46,6 +46,23 @@
 		521A8EAA19F11F5000D177D7 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 521A8EA819F11F5000D177D7 /* fonts */; };
 		52B47A471A53D09C004E4C60 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52B47A461A53D09B004E4C60 /* Security.framework */; };
 		8262943E1AAF051F00CB7CF7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8262943D1AAF051F00CB7CF7 /* Security.framework */; };
+		8735C99821A738A500CCDEA2 /* GestureRecognizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8735C98A21A738A500CCDEA2 /* GestureRecognizer.cpp */; };
+		8735C99921A738A500CCDEA2 /* GestureRecognizerUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8735C98C21A738A500CCDEA2 /* GestureRecognizerUtils.cpp */; };
+		8735C99D21A738A500CCDEA2 /* SwipeGestureRecognizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8735C99421A738A500CCDEA2 /* SwipeGestureRecognizer.cpp */; };
+		8735C9A521A73F5100CCDEA2 /* Field.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8735C9A321A73F5100CCDEA2 /* Field.cpp */; };
+		8735C9A621A73F5100CCDEA2 /* Field.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8735C9A321A73F5100CCDEA2 /* Field.cpp */; };
+		8735C9A921A7409100CCDEA2 /* Data.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8735C9A721A7409100CCDEA2 /* Data.cpp */; };
+		8735C9AA21A7409100CCDEA2 /* Data.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8735C9A721A7409100CCDEA2 /* Data.cpp */; };
+		8735C9AD21A8720C00CCDEA2 /* FieldGUI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8735C9AB21A8720C00CCDEA2 /* FieldGUI.cpp */; };
+		8735C9AE21A8720C00CCDEA2 /* FieldGUI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8735C9AB21A8720C00CCDEA2 /* FieldGUI.cpp */; };
+		8735C9B121A8845100CCDEA2 /* Cell.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8735C9AF21A8845100CCDEA2 /* Cell.cpp */; };
+		8735C9B221A8845100CCDEA2 /* Cell.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8735C9AF21A8845100CCDEA2 /* Cell.cpp */; };
+		8735C9B521A9752900CCDEA2 /* RoundedRect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8735C9B321A9752900CCDEA2 /* RoundedRect.cpp */; };
+		8735C9B621A9752900CCDEA2 /* RoundedRect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8735C9B321A9752900CCDEA2 /* RoundedRect.cpp */; };
+		8735C9C021AA13D400CCDEA2 /* NewGameButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8735C9BE21AA13D400CCDEA2 /* NewGameButton.cpp */; };
+		8735C9C121AA13D400CCDEA2 /* NewGameButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8735C9BE21AA13D400CCDEA2 /* NewGameButton.cpp */; };
+		8735C9C421AA7FB500CCDEA2 /* ScoreLabel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8735C9C221AA7FB500CCDEA2 /* ScoreLabel.cpp */; };
+		8735C9C521AA7FB500CCDEA2 /* ScoreLabel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8735C9C221AA7FB500CCDEA2 /* ScoreLabel.cpp */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
 		BF1C47F01293687400B63C5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1C47EA1293683800B63C5D /* QuartzCore.framework */; };
@@ -119,8 +136,8 @@
 		46880B7A19C43A67006E1F66 /* HelloWorld.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HelloWorld.png; sourceTree = "<group>"; };
 		46880B8419C43A87006E1F66 /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AppDelegate.cpp; sourceTree = "<group>"; };
 		46880B8519C43A87006E1F66 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		46880B8619C43A87006E1F66 /* HelloWorldScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HelloWorldScene.cpp; sourceTree = "<group>"; };
-		46880B8719C43A87006E1F66 /* HelloWorldScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloWorldScene.h; sourceTree = "<group>"; };
+		46880B8619C43A87006E1F66 /* GameScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameScene.cpp; sourceTree = "<group>"; };
+		46880B8719C43A87006E1F66 /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
 		503AE0F617EB97AB00D1A890 /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon.icns; sourceTree = "<group>"; };
 		503AE0F717EB97AB00D1A890 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		503AE10317EB98FF00D1A890 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = mac/main.cpp; sourceTree = "<group>"; };
@@ -133,6 +150,35 @@
 		521A8EA819F11F5000D177D7 /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
 		52B47A461A53D09B004E4C60 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		8262943D1AAF051F00CB7CF7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		8735C98A21A738A500CCDEA2 /* GestureRecognizer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GestureRecognizer.cpp; sourceTree = "<group>"; };
+		8735C98B21A738A500CCDEA2 /* GestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureRecognizer.h; sourceTree = "<group>"; };
+		8735C98C21A738A500CCDEA2 /* GestureRecognizerUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GestureRecognizerUtils.cpp; sourceTree = "<group>"; };
+		8735C98D21A738A500CCDEA2 /* GestureRecognizerUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureRecognizerUtils.h; sourceTree = "<group>"; };
+		8735C98E21A738A500CCDEA2 /* LongPressGestureRecognizer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LongPressGestureRecognizer.cpp; sourceTree = "<group>"; };
+		8735C98F21A738A500CCDEA2 /* LongPressGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LongPressGestureRecognizer.h; sourceTree = "<group>"; };
+		8735C99021A738A500CCDEA2 /* PanGestureRecognizer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PanGestureRecognizer.cpp; sourceTree = "<group>"; };
+		8735C99121A738A500CCDEA2 /* PanGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PanGestureRecognizer.h; sourceTree = "<group>"; };
+		8735C99221A738A500CCDEA2 /* PinchGestureRecognizer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PinchGestureRecognizer.cpp; sourceTree = "<group>"; };
+		8735C99321A738A500CCDEA2 /* PinchGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinchGestureRecognizer.h; sourceTree = "<group>"; };
+		8735C99421A738A500CCDEA2 /* SwipeGestureRecognizer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SwipeGestureRecognizer.cpp; sourceTree = "<group>"; };
+		8735C99521A738A500CCDEA2 /* SwipeGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeGestureRecognizer.h; sourceTree = "<group>"; };
+		8735C99621A738A500CCDEA2 /* TapGestureRecognizer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TapGestureRecognizer.cpp; sourceTree = "<group>"; };
+		8735C99721A738A500CCDEA2 /* TapGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TapGestureRecognizer.h; sourceTree = "<group>"; };
+		8735C9A221A73E7D00CCDEA2 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		8735C9A321A73F5100CCDEA2 /* Field.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Field.cpp; sourceTree = "<group>"; };
+		8735C9A421A73F5100CCDEA2 /* Field.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Field.hpp; sourceTree = "<group>"; };
+		8735C9A721A7409100CCDEA2 /* Data.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Data.cpp; sourceTree = "<group>"; };
+		8735C9A821A7409100CCDEA2 /* Data.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Data.hpp; sourceTree = "<group>"; };
+		8735C9AB21A8720C00CCDEA2 /* FieldGUI.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FieldGUI.cpp; sourceTree = "<group>"; };
+		8735C9AC21A8720C00CCDEA2 /* FieldGUI.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FieldGUI.hpp; sourceTree = "<group>"; };
+		8735C9AF21A8845100CCDEA2 /* Cell.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Cell.cpp; sourceTree = "<group>"; };
+		8735C9B021A8845100CCDEA2 /* Cell.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Cell.hpp; sourceTree = "<group>"; };
+		8735C9B321A9752900CCDEA2 /* RoundedRect.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RoundedRect.cpp; sourceTree = "<group>"; };
+		8735C9B421A9752900CCDEA2 /* RoundedRect.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = RoundedRect.hpp; sourceTree = "<group>"; };
+		8735C9BE21AA13D400CCDEA2 /* NewGameButton.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NewGameButton.cpp; sourceTree = "<group>"; };
+		8735C9BF21AA13D400CCDEA2 /* NewGameButton.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = NewGameButton.hpp; sourceTree = "<group>"; };
+		8735C9C221AA7FB500CCDEA2 /* ScoreLabel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ScoreLabel.cpp; sourceTree = "<group>"; };
+		8735C9C321AA7FB500CCDEA2 /* ScoreLabel.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ScoreLabel.hpp; sourceTree = "<group>"; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		BF1C47EA1293683800B63C5D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -281,10 +327,26 @@
 		46880B8319C43A87006E1F66 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				8735C98921A738A500CCDEA2 /* Gestures */,
 				46880B8419C43A87006E1F66 /* AppDelegate.cpp */,
 				46880B8519C43A87006E1F66 /* AppDelegate.h */,
-				46880B8619C43A87006E1F66 /* HelloWorldScene.cpp */,
-				46880B8719C43A87006E1F66 /* HelloWorldScene.h */,
+				46880B8619C43A87006E1F66 /* GameScene.cpp */,
+				46880B8719C43A87006E1F66 /* GameScene.h */,
+				8735C9A321A73F5100CCDEA2 /* Field.cpp */,
+				8735C9A421A73F5100CCDEA2 /* Field.hpp */,
+				8735C9AB21A8720C00CCDEA2 /* FieldGUI.cpp */,
+				8735C9AC21A8720C00CCDEA2 /* FieldGUI.hpp */,
+				8735C9AF21A8845100CCDEA2 /* Cell.cpp */,
+				8735C9B021A8845100CCDEA2 /* Cell.hpp */,
+				8735C9A721A7409100CCDEA2 /* Data.cpp */,
+				8735C9A821A7409100CCDEA2 /* Data.hpp */,
+				8735C9A221A73E7D00CCDEA2 /* Constants.h */,
+				8735C9B321A9752900CCDEA2 /* RoundedRect.cpp */,
+				8735C9B421A9752900CCDEA2 /* RoundedRect.hpp */,
+				8735C9BE21AA13D400CCDEA2 /* NewGameButton.cpp */,
+				8735C9BF21AA13D400CCDEA2 /* NewGameButton.hpp */,
+				8735C9C221AA7FB500CCDEA2 /* ScoreLabel.cpp */,
+				8735C9C321AA7FB500CCDEA2 /* ScoreLabel.hpp */,
 			);
 			name = Classes;
 			path = ../Classes;
@@ -308,6 +370,27 @@
 				503AE10417EB98FF00D1A890 /* Prefix.pch */,
 			);
 			name = mac;
+			sourceTree = "<group>";
+		};
+		8735C98921A738A500CCDEA2 /* Gestures */ = {
+			isa = PBXGroup;
+			children = (
+				8735C98A21A738A500CCDEA2 /* GestureRecognizer.cpp */,
+				8735C98B21A738A500CCDEA2 /* GestureRecognizer.h */,
+				8735C98C21A738A500CCDEA2 /* GestureRecognizerUtils.cpp */,
+				8735C98D21A738A500CCDEA2 /* GestureRecognizerUtils.h */,
+				8735C98E21A738A500CCDEA2 /* LongPressGestureRecognizer.cpp */,
+				8735C98F21A738A500CCDEA2 /* LongPressGestureRecognizer.h */,
+				8735C99021A738A500CCDEA2 /* PanGestureRecognizer.cpp */,
+				8735C99121A738A500CCDEA2 /* PanGestureRecognizer.h */,
+				8735C99221A738A500CCDEA2 /* PinchGestureRecognizer.cpp */,
+				8735C99321A738A500CCDEA2 /* PinchGestureRecognizer.h */,
+				8735C99421A738A500CCDEA2 /* SwipeGestureRecognizer.cpp */,
+				8735C99521A738A500CCDEA2 /* SwipeGestureRecognizer.h */,
+				8735C99621A738A500CCDEA2 /* TapGestureRecognizer.cpp */,
+				8735C99721A738A500CCDEA2 /* TapGestureRecognizer.h */,
+			);
+			path = Gestures;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -356,6 +439,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0500;
+				TargetAttributes = {
+					1D6058900D05DD3D006BFB54 = {
+						DevelopmentTeam = 3Z765JAEAU;
+					};
+				};
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Test2048" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -443,11 +531,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8735C9C421AA7FB500CCDEA2 /* ScoreLabel.cpp in Sources */,
+				8735C99D21A738A500CCDEA2 /* SwipeGestureRecognizer.cpp in Sources */,
 				1AF87B781F6F77F7007BE51C /* AppController.mm in Sources */,
+				8735C9C021AA13D400CCDEA2 /* NewGameButton.cpp in Sources */,
+				8735C9B521A9752900CCDEA2 /* RoundedRect.cpp in Sources */,
 				1AF87B8B1F6F782A007BE51C /* RootViewController.mm in Sources */,
+				8735C9AD21A8720C00CCDEA2 /* FieldGUI.cpp in Sources */,
+				8735C9A521A73F5100CCDEA2 /* Field.cpp in Sources */,
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
+				8735C9A921A7409100CCDEA2 /* Data.cpp in Sources */,
+				8735C9B121A8845100CCDEA2 /* Cell.cpp in Sources */,
 				1AF87B8A1F6F7822007BE51C /* main.m in Sources */,
-				46880B8A19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */,
+				46880B8A19C43A87006E1F66 /* GameScene.cpp in Sources */,
+				8735C99821A738A500CCDEA2 /* GestureRecognizer.cpp in Sources */,
+				8735C99921A738A500CCDEA2 /* GestureRecognizerUtils.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,7 +555,14 @@
 			files = (
 				46880B8919C43A87006E1F66 /* AppDelegate.cpp in Sources */,
 				503AE10517EB98FF00D1A890 /* main.cpp in Sources */,
-				46880B8B19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */,
+				8735C9A621A73F5100CCDEA2 /* Field.cpp in Sources */,
+				8735C9C521AA7FB500CCDEA2 /* ScoreLabel.cpp in Sources */,
+				8735C9B221A8845100CCDEA2 /* Cell.cpp in Sources */,
+				8735C9C121AA13D400CCDEA2 /* NewGameButton.cpp in Sources */,
+				46880B8B19C43A87006E1F66 /* GameScene.cpp in Sources */,
+				8735C9AE21A8720C00CCDEA2 /* FieldGUI.cpp in Sources */,
+				8735C9AA21A7409100CCDEA2 /* Data.cpp in Sources */,
+				8735C9B621A9752900CCDEA2 /* RoundedRect.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,6 +589,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
+				DEVELOPMENT_TEAM = 3Z765JAEAU;
 				ENABLE_BITCODE = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
@@ -518,6 +624,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
+				DEVELOPMENT_TEAM = 3Z765JAEAU;
 				ENABLE_BITCODE = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
