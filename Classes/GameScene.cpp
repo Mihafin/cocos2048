@@ -2,6 +2,7 @@
 #include "GameScene.h"
 #include "SimpleAudioEngine.h"
 #include "Gestures/GestureRecognizerUtils.h"
+#include "Colors.h"
 
 USING_NS_CC;
 
@@ -25,7 +26,7 @@ bool GameScene::init() {
 }
 
 void GameScene::initGui() {
-    auto background = LayerColor::create(Color4B(0xfa, 0xf8, 0xee, 255));
+    auto background = LayerColor::create(Colors::MainBack);
     this->addChild(background, -1);
     
     auto visibleSize = Director::getInstance()->getVisibleSize();

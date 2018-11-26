@@ -2,6 +2,7 @@
 #include "Constants.h"
 #include "cocos2d.h"
 #include "RoundedRect.hpp"
+#include "Colors.h"
 
 USING_NS_CC;
 
@@ -26,25 +27,12 @@ float Cell::getFontSize() {
     return _val < 100 ? 60 : (_val < 1000 ? 50 : 40); // todo: move to consts or calculate
 }
 
-Color4F Cell::getFillColor(){
-    static std::unordered_map<int, Color4F> colors {
-        {2,     Color4F(0xee/255.0f, 0xe4/255.0f, 0xda/255.0f, 1.0f)},
-        {4,     Color4F(0xed/255.0f, 0xe0/255.0f, 0xc8/255.0f, 1.0f)},
-        {8,     Color4F(0xf2/255.0f, 0xb1/255.0f, 0x79/255.0f, 1.0f)},
-        {16,    Color4F(0xf5/255.0f, 0x95/255.0f, 0x63/255.0f, 1.0f)},
-        {32,    Color4F(0xf6/255.0f, 0x7c/255.0f, 0x5f/255.0f, 1.0f)},
-        {64,    Color4F(0xf6/255.0f, 0x5e/255.0f, 0x3b/255.0f, 1.0f)},
-        {128,   Color4F(0xed/255.0f, 0xcf/255.0f, 0x72/255.0f, 1.0f)},
-        {256,   Color4F(0xed/255.0f, 0xcc/255.0f, 0x61/255.0f, 1.0f)},
-        {512,   Color4F(0xed/255.0f, 0xc8/255.0f, 0x50/255.0f, 1.0f)},
-        {1024,  Color4F(0xed/255.0f, 0xc5/255.0f, 0x3f/255.0f, 1.0f)},
-        {2048,  Color4F(0xed/255.0f, 0xc2/255.0f, 0x2e/255.0f, 1.0f)}
-    };
-    return colors[_val];
+const Color4F Cell::getFillColor() {
+    return Colors::Cells.at(_val);
 }
 
 Color4B Cell::getTextColor() {
-    return _val > 4 ? Color4B(0xf9, 0xf6, 0xf2, 255) : Color4B(0x77, 0x6e, 0x65, 255);
+    return _val > 4 ? Colors::CellText1 : Colors::CellText2;
 }
 
 void Cell::show(int val){

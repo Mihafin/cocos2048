@@ -1,5 +1,6 @@
 #include "NewGameButton.hpp"
 #include "RoundedRect.hpp"
+#include "Colors.h"
 
 USING_NS_CC;
 
@@ -15,10 +16,10 @@ bool NewGameButton::init()
 
     auto back = RoundedRect::create();
     back->setPosition(Vec2::ZERO);
-    back->setSizeAndColor(Vec2(btnW, btnH), Color4F(0x8f/255.0f, 0x7a/255.0f, 0x66/255.0f, 1.0f));
+    back->setSizeAndColor(Vec2(btnW, btnH), Colors::Back2);
     
     auto btnText = Label::createWithTTF(Consts::newGameText, Consts::guiFont, fntSize);
-    btnText->setTextColor(Color4B(0xf9, 0xf6, 0xf2, 255));
+    btnText->setTextColor(Colors::ButtonText);
     btnText->setPosition(Vec2(btnW/2, btnH/2));
     
     addChild(back);

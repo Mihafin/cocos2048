@@ -4,6 +4,7 @@
 #include "Field.hpp"
 #include "NewGameButton.hpp"
 #include <iostream>
+#include "Colors.h"
 
 USING_NS_CC;
 
@@ -18,7 +19,7 @@ bool FieldGUI::init(){
                            -Consts::FIELD_HEIGHT/ 2 - Consts::CELL_OFFSET / 2));
     back->setSizeAndColor(Vec2(Consts::FIELD_WIDTH + Consts::CELL_OFFSET,
                                Consts::FIELD_HEIGHT + Consts::CELL_OFFSET),
-                          Color4F(0xba/255.0f, 0xad/255.0f, 0xa0/255.0f, 1.0f));
+                          Colors::Back1);
 
     //tiles
     for (int r = 0; r < Consts::ROWS; ++r)
@@ -28,7 +29,7 @@ bool FieldGUI::init(){
             tile->setPosition(Vec2(Consts::CELL_OFFSET + c * Consts::CELL_WIDTH, Consts::CELL_OFFSET + r * Consts::CELL_HEIGHT));
             int w = Consts::CELL_WIDTH - Consts::CELL_OFFSET;
             int h = Consts::CELL_HEIGHT - Consts::CELL_OFFSET;
-            tile->setSizeAndColor(Vec2(w, h), Color4F(0xcc/255.0f, 0xc1/255.0f, 0xb4/255.0f, 1.0f));
+            tile->setSizeAndColor(Vec2(w, h), Colors::CellBack);
             back->addChild(tile, 1);
         }
 
@@ -78,7 +79,7 @@ bool FieldGUI::init(){
 void FieldGUI::showMess(const std::string& mes) {
     auto lbl = Label::createWithTTF(mes, Consts::guiFont, 70);
     lbl->enableShadow();
-    lbl->enableGlow(Color4B(0x77, 0x6e, 0x65, 255));
+    lbl->enableGlow(Colors::calcColor4B(0x776e65));
     lbl->setPosition(Vec2::ZERO);
     _cellLayer->addChild(lbl, 2);
     lbl->setScale(0);

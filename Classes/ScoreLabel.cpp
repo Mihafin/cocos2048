@@ -1,5 +1,6 @@
 #include "ScoreLabel.hpp"
 #include "RoundedRect.hpp"
+#include "Colors.h"
 
 USING_NS_CC;
 
@@ -14,11 +15,11 @@ bool ScoreLabel::init()
     auto btnW = 150, btnH = 90, fntSize = 35;
     auto back = RoundedRect::create();
     back->setPosition(Vec2::ZERO);
-    back->setSizeAndColor(Vec2(btnW, btnH), Color4F(0xba/255.0f, 0xad/255.0f, 0xa0/255.0f, 1.0f));
+    back->setSizeAndColor(Vec2(btnW, btnH), Colors::Back1);
     addChild(back);
     
     _lblTitle = Label::createWithTTF("", Consts::guiFont, fntSize);
-    _lblTitle->setTextColor(Color4B(0xe4, 0xda, 0xce, 255));
+    _lblTitle->setTextColor(Colors::ScoreLableText);
     _lblTitle->setPosition(Vec2(btnW/2, btnH/2 + (fntSize + 5)/2));
     addChild(_lblTitle);
     

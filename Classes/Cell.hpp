@@ -25,7 +25,7 @@ private:
     virtual bool init();
     
     float getFontSize();
-    Color4F getFillColor();
+    const Color4F getFillColor();
     Color4B getTextColor();
     
     Label* _lblVal = nullptr;

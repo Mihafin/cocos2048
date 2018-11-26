@@ -179,6 +179,7 @@
 		8735C9BF21AA13D400CCDEA2 /* NewGameButton.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = NewGameButton.hpp; sourceTree = "<group>"; };
 		8735C9C221AA7FB500CCDEA2 /* ScoreLabel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ScoreLabel.cpp; sourceTree = "<group>"; };
 		8735C9C321AA7FB500CCDEA2 /* ScoreLabel.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ScoreLabel.hpp; sourceTree = "<group>"; };
+		87DFBC6421AC6C870030473D /* Colors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Colors.h; sourceTree = "<group>"; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		BF1C47EA1293683800B63C5D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -340,13 +341,14 @@
 				8735C9B021A8845100CCDEA2 /* Cell.hpp */,
 				8735C9A721A7409100CCDEA2 /* Data.cpp */,
 				8735C9A821A7409100CCDEA2 /* Data.hpp */,
-				8735C9A221A73E7D00CCDEA2 /* Constants.h */,
 				8735C9B321A9752900CCDEA2 /* RoundedRect.cpp */,
 				8735C9B421A9752900CCDEA2 /* RoundedRect.hpp */,
 				8735C9BE21AA13D400CCDEA2 /* NewGameButton.cpp */,
 				8735C9BF21AA13D400CCDEA2 /* NewGameButton.hpp */,
 				8735C9C221AA7FB500CCDEA2 /* ScoreLabel.cpp */,
 				8735C9C321AA7FB500CCDEA2 /* ScoreLabel.hpp */,
+				8735C9A221A73E7D00CCDEA2 /* Constants.h */,
+				87DFBC6421AC6C870030473D /* Colors.h */,
 			);
 			name = Classes;
 			path = ../Classes;
