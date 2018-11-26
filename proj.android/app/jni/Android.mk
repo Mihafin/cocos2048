@@ -13,7 +13,17 @@ LOCAL_MODULE_FILENAME := libMyGame
 
 LOCAL_SRC_FILES := $(LOCAL_PATH)/hellocpp/main.cpp \
                    $(LOCAL_PATH)/../../../Classes/AppDelegate.cpp \
-                   $(LOCAL_PATH)/../../../Classes/HelloWorldScene.cpp
+                   $(LOCAL_PATH)/../../../Classes/Cell.cpp \
+                   $(LOCAL_PATH)/../../../Classes/Data.cpp \
+                   $(LOCAL_PATH)/../../../Classes/Field.cpp \
+                   $(LOCAL_PATH)/../../../Classes/FieldGUI.cpp \
+                   $(LOCAL_PATH)/../../../Classes/GameScene.cpp \
+                   $(LOCAL_PATH)/../../../Classes/NewGameButton.cpp \
+                   $(LOCAL_PATH)/../../../Classes/RoundedRect.cpp \
+                   $(LOCAL_PATH)/../../../Classes/ScoreLabel.cpp \
+                   $(LOCAL_PATH)/../../../Classes/Gestures/GestureRecognizer.cpp \
+                   $(LOCAL_PATH)/../../../Classes/Gestures/GestureRecognizerUtils.cpp \
+                   $(LOCAL_PATH)/../../../Classes/Gestures/SwipeGestureRecognizer.cpp 
 
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/../../../Classes
 

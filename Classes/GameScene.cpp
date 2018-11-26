@@ -2,6 +2,7 @@
 #include "GameScene.h"
 #include "SimpleAudioEngine.h"
 #include "Gestures/GestureRecognizerUtils.h"
+#include "Gestures/SwipeGestureRecognizer.h"
 #include "Colors.h"
 
 USING_NS_CC;
@@ -39,8 +40,8 @@ void GameScene::initGui() {
 }
 
 void GameScene::addGestureRecognizers() {
-#if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
-    log("init for ios");
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS || CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
+    log("init for ios/android");
     auto swipe = SwipeGestureRecognizer::create();
     swipe->onSwipe = CC_CALLBACK_1(GameScene::onSwipe, this);
     addChild(swipe);
@@ -50,7 +51,7 @@ void GameScene::addGestureRecognizers() {
     listener->onKeyPressed = CC_CALLBACK_2(GameScene::onKeyPressed, this);
     _eventDispatcher->addEventListenerWithSceneGraphPriority(listener, this);
 #else
-    unsupported os!
+    //unsupported os!
 #endif
 }
 
