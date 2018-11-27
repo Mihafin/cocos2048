@@ -2,6 +2,7 @@
 #include "Constants.h"
 #include "cocos2d.h"
 #include "Field.hpp"
+#include "FieldBack.hpp"
 #include "NewGameButton.hpp"
 #include <iostream>
 #include "Colors.h"
@@ -14,24 +15,9 @@ bool FieldGUI::init(){
         return false;
     }
     // back
-    auto back = RoundedRect::create();
+    auto back = FieldBack::create();
     back->setPosition(Vec2(-Consts::FIELD_WIDTH / 2 - Consts::CELL_OFFSET / 2,
                            -Consts::FIELD_HEIGHT/ 2 - Consts::CELL_OFFSET / 2));
-    back->setSizeAndColor(Vec2(Consts::FIELD_WIDTH + Consts::CELL_OFFSET,
-                               Consts::FIELD_HEIGHT + Consts::CELL_OFFSET),
-                          Colors::Back1);
-
-    //tiles
-    for (int r = 0; r < Consts::ROWS; ++r)
-        for (int c = 0; c < Consts::COLS; ++c)
-        {
-            auto tile = RoundedRect::create();
-            tile->setPosition(Vec2(Consts::CELL_OFFSET + c * Consts::CELL_WIDTH, Consts::CELL_OFFSET + r * Consts::CELL_HEIGHT));
-            int w = Consts::CELL_WIDTH - Consts::CELL_OFFSET;
-            int h = Consts::CELL_HEIGHT - Consts::CELL_OFFSET;
-            tile->setSizeAndColor(Vec2(w, h), Colors::CellBack);
-            back->addChild(tile, 1);
-        }
 
     //layer for cells
     _cellLayer = Node::create();

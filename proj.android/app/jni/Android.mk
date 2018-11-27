@@ -17,6 +17,7 @@ LOCAL_SRC_FILES := $(LOCAL_PATH)/hellocpp/main.cpp \
                    $(LOCAL_PATH)/../../../Classes/Data.cpp \
                    $(LOCAL_PATH)/../../../Classes/Field.cpp \
                    $(LOCAL_PATH)/../../../Classes/FieldGUI.cpp \
+                   $(LOCAL_PATH)/../../../Classes/FieldBack.cpp \
                    $(LOCAL_PATH)/../../../Classes/GameScene.cpp \
                    $(LOCAL_PATH)/../../../Classes/NewGameButton.cpp \
                    $(LOCAL_PATH)/../../../Classes/RoundedRect.cpp \

@@ -57,6 +57,8 @@
 		8735C9C121AA13D400CCDEA2 /* NewGameButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8735C9BE21AA13D400CCDEA2 /* NewGameButton.cpp */; };
 		8735C9C421AA7FB500CCDEA2 /* ScoreLabel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8735C9C221AA7FB500CCDEA2 /* ScoreLabel.cpp */; };
 		8735C9C521AA7FB500CCDEA2 /* ScoreLabel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8735C9C221AA7FB500CCDEA2 /* ScoreLabel.cpp */; };
+		87DFBC6921AD4D2D0030473D /* FieldBack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87DFBC6721AD4D2D0030473D /* FieldBack.cpp */; };
+		87DFBC6A21AD4D2D0030473D /* FieldBack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87DFBC6721AD4D2D0030473D /* FieldBack.cpp */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
 		BF1C47F01293687400B63C5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1C47EA1293683800B63C5D /* QuartzCore.framework */; };
@@ -174,6 +176,8 @@
 		8735C9C221AA7FB500CCDEA2 /* ScoreLabel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ScoreLabel.cpp; sourceTree = "<group>"; };
 		8735C9C321AA7FB500CCDEA2 /* ScoreLabel.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ScoreLabel.hpp; sourceTree = "<group>"; };
 		87DFBC6421AC6C870030473D /* Colors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Colors.h; sourceTree = "<group>"; };
+		87DFBC6721AD4D2D0030473D /* FieldBack.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FieldBack.cpp; sourceTree = "<group>"; };
+		87DFBC6821AD4D2D0030473D /* FieldBack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FieldBack.hpp; sourceTree = "<group>"; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		BF1C47EA1293683800B63C5D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -331,6 +335,8 @@
 				8735C9A421A73F5100CCDEA2 /* Field.hpp */,
 				8735C9AB21A8720C00CCDEA2 /* FieldGUI.cpp */,
 				8735C9AC21A8720C00CCDEA2 /* FieldGUI.hpp */,
+				87DFBC6721AD4D2D0030473D /* FieldBack.cpp */,
+				87DFBC6821AD4D2D0030473D /* FieldBack.hpp */,
 				8735C9AF21A8845100CCDEA2 /* Cell.cpp */,
 				8735C9B021A8845100CCDEA2 /* Cell.hpp */,
 				8735C9A721A7409100CCDEA2 /* Data.cpp */,
@@ -524,6 +530,7 @@
 				8735C9C421AA7FB500CCDEA2 /* ScoreLabel.cpp in Sources */,
 				8735C99D21A738A500CCDEA2 /* SwipeGestureRecognizer.cpp in Sources */,
 				1AF87B781F6F77F7007BE51C /* AppController.mm in Sources */,
+				87DFBC6921AD4D2D0030473D /* FieldBack.cpp in Sources */,
 				8735C9C021AA13D400CCDEA2 /* NewGameButton.cpp in Sources */,
 				8735C9B521A9752900CCDEA2 /* RoundedRect.cpp in Sources */,
 				1AF87B8B1F6F782A007BE51C /* RootViewController.mm in Sources */,
@@ -549,6 +556,7 @@
 				8735C9C521AA7FB500CCDEA2 /* ScoreLabel.cpp in Sources */,
 				8735C9B221A8845100CCDEA2 /* Cell.cpp in Sources */,
 				8735C9C121AA13D400CCDEA2 /* NewGameButton.cpp in Sources */,
+				87DFBC6A21AD4D2D0030473D /* FieldBack.cpp in Sources */,
 				46880B8B19C43A87006E1F66 /* GameScene.cpp in Sources */,
 				8735C9AE21A8720C00CCDEA2 /* FieldGUI.cpp in Sources */,
 				8735C9AA21A7409100CCDEA2 /* Data.cpp in Sources */,
