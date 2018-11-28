@@ -6,7 +6,9 @@
  - прогресс сохраняется между запусками
 
 
-Запускать через Xcode. Файл проекта proj.ios_mac/Test2048.xcodeproj
+MacOS, IOS: Запускать через Xcode. Файл проекта proj.ios_mac/Test2048.xcodeproj
+
+Android: cocos run -p android
  
 
 Алгоритм (левый свайп):
